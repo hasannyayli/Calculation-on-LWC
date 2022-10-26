@@ -1,0 +1,30 @@
+<apex:page controller="customListController" >
+    
+    <apex:form >
+        
+        <apex:pageBlock title="Opportunity List">
+        
+            <apex:pageBlockTable value="{!multiOp}" var="single">
+            
+                <apex:column value="{!single.Name}"/>
+                <apex:column value="{!single.AccountId}"/>
+                <apex:column value="{!single.Amount}"/>
+            
+            
+            
+            
+            </apex:pageBlockTable>
+        
+        
+        
+        
+        
+        </apex:pageBlock>
+    
+    
+    
+    
+    
+    </apex:form>
+  
+</apex:page>

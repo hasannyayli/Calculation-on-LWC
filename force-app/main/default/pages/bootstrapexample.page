@@ -1,0 +1,21 @@
+<apex:page standardStylesheets="false">
+
+    
+    <apex:stylesheet value="{!URLFOR($Resource.bootstrap, '/bootstrap-5.2.2-dist/css/bootstrap.min.css/')}"/>
+    
+    
+      <h1> Hello World! </h1>
+    
+
+    <apex:includeScript value="{!URLFOR($Resource.bootstrap, '/bootstrap-5.2.2-dist/js/bootstrap.min.js/')}"/>
+  
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+<button type="button" class="btn btn-outline-secondary">Secondary</button>
+<button type="button" class="btn btn-outline-success">Success</button>
+<button type="button" class="btn btn-outline-danger">Danger</button>
+<button type="button" class="btn btn-outline-warning">Warning</button>
+<button type="button" class="btn btn-outline-info">Info</button>
+<button type="button" class="btn btn-outline-light">Light</button>
+<button type="button" class="btn btn-outline-dark">Dark</button>
+  
+</apex:page>

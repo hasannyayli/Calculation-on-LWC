@@ -1,0 +1,22 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 10-24-2022
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">
+
+<lightning:messageChannel type="mc__c" onMessage="{!c.handleChanged}" scope="APPLICATION" />
+
+<aura:attribute type="String" name="RecievedMessage" Default="No Message" />
+
+  <lightning:card footer="Subscriber" title="Message">
+   
+    <p class="slds-p-horizontal_small">
+
+        {!v.RecievedMessage}
+     
+    </p>
+</lightning:card>
+</aura:component>
